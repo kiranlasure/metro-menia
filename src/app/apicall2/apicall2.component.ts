@@ -12,7 +12,7 @@ export class Apicall2Component implements OnInit {
   constructor(private _data : PersonService) { }
   nm;
 
-  
+    
   ngOnInit() {
     this._data.getEmployees()
     .subscribe(data => this.person = data);
